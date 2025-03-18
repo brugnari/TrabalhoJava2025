@@ -1,3 +1,4 @@
+
 public abstract class Dinossauro {
 private String nome,peso,velocidade;
 private int idade,saude;
@@ -52,5 +53,6 @@ public void Informacoes() {
     System.out.println("Saude: "+this.getSaude());
     
 }
+
 
 }

@@ -1,3 +1,4 @@
+
 public class Carnivoro extends Dinossauro implements Acoes {
     public Carnivoro(String nome, String peso, String velocidade, int idade, int saude) {
         super(nome, peso, velocidade, idade, saude);
@@ -8,11 +9,11 @@ public class Carnivoro extends Dinossauro implements Acoes {
     }
     @Override
     public void mover() {
-        System.out.println("O "+this.getNome()+"se moveu");
+        System.out.println("O "+this.getNome()+" corre a "+this.getVelocidade());
     }
     
     @Override
     public void comer() {
-        System.out.println("O" +this.getNome()+" comeu");
+        System.out.println("O" +this.getNome()+" come carne.");
     }
 }

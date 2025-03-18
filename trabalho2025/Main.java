@@ -1,15 +1,15 @@
-
 public class Main {
     public static void main(String[] args) {
-        Dinossauro[] Objetodinossauro = new Dinossauro[2];
-        Objetodinossauro[0] = new Carnivoro("T-REX", "5 toneladas", "50 km/h", 10, 100);
-        Objetodinossauro[1] = new Herbivoro("Estegossauro", "2 toneladas", "30 km/h", 15, 100);
-
-        for (Dinossauro dino : Objetodinossauro) {
-            dino.Informacoes();
-            dino.emitirSom();
-            dino.mover();
-            dino.comer();
+        Dinossauro[] dinossauros = new Dinossauro[3];
+        dinossauros[0] = new Carnivoro("T-Rex", "5000kg", "50km/h", 65, 100);
+        dinossauros[1] = new Herbivoro("Triceratops", "8000kg", "30km/h", 70, 100);
+        dinossauros[2] = new Carnivoro("Velociraptor", "2000kg", "60km/h", 50, 100);
+        
+        for (Dinossauro dinossauro : dinossauros) {
+            dinossauro.emitirSom();
+            dinossauro.mover();
+            dinossauro.comer();
+            dinossauro.Informacoes();
             System.out.println();
         }
     }

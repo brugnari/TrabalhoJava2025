@@ -10,12 +10,11 @@ public class Herbivoro extends Dinossauro implements Acoes {
     }
     @Override
     public void mover() {
-        System.out.println("O "+this.getNome()+" se move");
+        System.out.println("O "+this.getNome()+" corre a "+this.getVelocidade());
     }
      @Override
     public void comer() {
-        System.out.println("O "+this.getNome()+" comeu");
+        System.out.println("O "+this.getNome()+" comeu fruta.");
     }
-    
-   
 }
+   
