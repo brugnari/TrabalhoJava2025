@@ -1,4 +1,4 @@
-public class Dinossauro {
+public abstract class Dinossauro {
 private String nome,peso,velocidade;
 private int idade,saude;
 public String getNome() {
@@ -39,6 +39,18 @@ public Dinossauro(String nome, String peso, String velocidade, int idade, int sa
     this.saude = saude;
 }
 
+    
+    public abstract void emitirSom();
+    public abstract void mover();
+    public abstract void comer();
 
+public void Informacoes() {
+    System.out.println("Nome: "+this.getNome());
+    System.out.println("Peso: "+this.getPeso());
+    System.out.println("Velocidade: "+this.getVelocidade());
+    System.out.println("Idade: "+this.getIdade());
+    System.out.println("Saude: "+this.getSaude());
+    
+}
 
 }
