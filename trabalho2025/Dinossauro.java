@@ -1,5 +1,5 @@
 
-public class Dinossauro {
+public class Dinossauro implements Comida {
 
     private String nome, peso, velocidade;
     private int idade, saude;
@@ -62,6 +62,11 @@ public class Dinossauro {
 
     public void informacoes() {
         System.out.println("Nome: " + nome + "\nPeso: " + peso + "\nVelocidade: " + velocidade + "\nIdade: " + idade + "\nSaude: " + saude);
+
+    }
+
+    @Override
+    public void comer() {
 
     }
 
